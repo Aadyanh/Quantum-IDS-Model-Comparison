@@ -1,0 +1,28 @@
+==========================================================================================
+TEST RESULTS - threshold tuned on validation (max F1)
+==========================================================================================
+Model                   accuracy precision    recall        f1       mcc   roc_auc    pr_auc
+QSVM (scale 1.5)          0.9836    0.7282    0.9927    0.8401    0.8428    0.9948    0.8743
+Linear SVM                0.9826    0.7179    0.9834    0.8299    0.8323    0.9930    0.8298
+MLP 64-64                 0.9829    0.7173    0.9985    0.8349    0.8387    0.9934    0.8399
+
+TEST RESULTS - default threshold (score >= 0)
+Model                   accuracy precision    recall        f1       mcc   roc_auc    pr_auc
+QSVM (scale 1.5)          0.9704    0.8418    0.3892    0.5323    0.5608    0.9948    0.8743
+Linear SVM                0.9815    0.7022    0.9956    0.8236    0.8280    0.9930    0.8298
+MLP 64-64                 0.9699    0.8454    0.3724    0.5170    0.5495    0.9934    0.8399
+
+Detection rate per class on TEST (tuned threshold; Normal = correctly kept normal):
+Class                      n    QSVM (scale 1.5)          Linear SVM           MLP 64-64
+Analysis                 110              0.9818              1.0000              1.0000
+Backdoor                  69              1.0000              0.9420              1.0000
+DoS                      657              0.9909              0.9452              0.9954
+Exploits               3,885              0.9846              0.9889              0.9972
+Fuzzers                2,983              0.9933              0.9695              0.9983
+Generic                3,562              0.9986              0.9930              1.0000
+Normal               293,766              0.9832              0.9825              0.9822
+Reconnaissance         1,790              0.9983              0.9978              1.0000
+Shellcode                211              0.9953              0.9194              0.9953
+Worms                     23              1.0000              1.0000              1.0000
+
+CUDA-Q kernel check: not run

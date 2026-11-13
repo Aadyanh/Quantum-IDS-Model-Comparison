@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Secrets / credentials
+.env
+.env.*
+kaggle.json
+*.key
+*.pem
+
+# Datasets (download from the sources listed in each README)
+**/data/*
+!**/data/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,43 @@
+========================================================
+  QNN (V3, CICIDS2017) TEST-SET METRICS
+========================================================
+[threshold 0.5]
+  accuracy  : 0.9656
+  precision : 0.8883
+  recall    : 0.8827
+  f1        : 0.8855
+  roc_auc   : 0.9831
+  pr_auc    : 0.9274
+  True Negatives (0):  185,797
+  False Positives (1): 3,735
+  False Negatives (0): 3,948
+  True Positives (1):  29,701
+
+[threshold 0.6275 (tuned on val)]
+  accuracy  : 0.9678
+  precision : 0.9272
+  recall    : 0.8535
+  f1        : 0.8889
+  roc_auc   : 0.9831
+  pr_auc    : 0.9274
+  True Negatives (0):  187,277
+  False Positives (1): 2,255
+  False Negatives (0): 4,928
+  True Positives (1):  28,721
+
+Per-class results on test (tuned threshold 0.6275):
+  BENIGN                       n= 189,532  correctly kept benign: 0.9881
+  BOT                          n=     137  detected:             0.0000
+  DDOS                         n=  12,899  detected:             0.9884
+  DOS GOLDENEYE                n=   1,079  detected:             0.4513
+  DOS HULK                     n=  17,206  detected:             0.8732
+  DOS SLOWHTTPTEST             n=     506  detected:             0.5573
+  DOS SLOWLORIS                n=     529  detected:             0.3081
+  FTP-PATATOR                  n=     564  detected:             0.0000
+  HEARTBLEED                   n=       1  detected:             1.0000
+  INFILTRATION                 n=       3  detected:             0.0000
+  PORTSCAN                     n=     218  detected:             0.0550
+  SSH-PATATOR                  n=     314  detected:             0.0064
+  WEB ATTACK � BRUTE FORCE     n=     133  detected:             0.0000
+  WEB ATTACK � SQL INJECTION   n=       2  detected:             0.0000
+  WEB ATTACK � XSS             n=      58  detected:             0.0000

@@ -1,0 +1,26 @@
+========================================================
+  HQNN MODEL EVALUATION METRICS (TEST SET)
+========================================================
+[threshold 0.5]
+  accuracy  : 0.9898
+  precision : 0.9959
+  recall    : 0.9907
+  f1        : 0.9933
+  roc_auc   : 0.9988
+  pr_auc    : 0.9996
+  True Negatives (0):  4,935
+  False Positives (1): 65
+  False Negatives (0): 150
+  True Positives (1):  15,955
+
+[threshold 0.219 (tuned on val)]
+  accuracy  : 0.9932
+  precision : 0.9950
+  recall    : 0.9961
+  f1        : 0.9955
+  roc_auc   : 0.9988
+  pr_auc    : 0.9996
+  True Negatives (0):  4,919
+  False Positives (1): 81
+  False Negatives (0): 63
+  True Positives (1):  16,042
